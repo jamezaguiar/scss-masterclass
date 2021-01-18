@@ -1,0 +1,22 @@
+// @import "base";
+// @import "loops";
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  @extend .flex;
+  flex-direction: column;
+}
+
+p {
+  color: red;
+  cursor: pointer;
+
+  &:hover {
+    color: blue;
+  }
+}
